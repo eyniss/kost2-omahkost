@@ -1,0 +1,135 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f9fafb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.gambar {
+    position: relative;
+}
+
+.gambar img.gambar-utama {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gambar-kecil {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gambar-kecil img {
+    flex: 1;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* transition: transform 0.3s; */
+}
+
+/* .gambar-kecil img:hover {
+    transform: scale(1.05);
+} */
+
+.info-kost {
+    margin-top: 20px;
+}
+
+.info-kost h1 {
+    margin: 20px 0 10px;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+.lokasi {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 10px;
+  }
+
+.harga {
+    font-size: 22px;
+    color: #10b981;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.ketersediaan-badge {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #10b981;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-left: 15px;
+    border: 1px solid var(--primary-color);
+}
+
+.spesifikasi {
+    margin-top: 40px;
+}
+
+.spesifikasi h2 {
+    font-size: 20px;
+    color: #111827;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+.spesifikasi ul {
+    padding-left: 20px;
+    color: #374151;
+    margin-bottom: 20px;
+}
+
+.fasilitas-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+.badge {
+    background: #e0f2f1;
+    color: #065f46;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+.btn-kos {
+    background: linear-gradient(90deg, #10b981, #059669);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+.btn-kos:hover {
+    background: linear-gradient(90deg, #059669, #047857);
+  }
+
