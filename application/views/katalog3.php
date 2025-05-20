@@ -41,7 +41,11 @@ $kost = [
         <h1><?= $kost['nama'] ?></h1>
         <p class="lokasi"><i class="fas fa-map-marker-alt"></i> <?= $kost['lokasi'] ?></p>
         <p class="harga"><?= $kost['harga'] ?> 
-        <a href="<?= site_url('Pendaftaran/proses') ?>" class="btn-kos">Mulai Kost Sekarang</a>
+         <?php if ($this->session->userdata('user_id')): ?>
+                    <a href="<?= site_url('Pendaftaran/proses') ?>" class="btn-kos">Mulai Kos Sekarang</a>
+                <?php else: ?>
+                    <button class="btn-kos" onclick="alert('Silakan login terlebih dahulu untuk memulai proses kos.')">Mulai Kos Sekarang</button>
+                <?php endif; ?>
         </div>
 
     <div class="spesifikasi">
